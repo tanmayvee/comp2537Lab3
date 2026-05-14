@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+        .container {
+            height: 101vh;
+        }
+        .pokemon-card {
+            width: 200px;
+            display: inline-block;
+            margin: 18px;
+            vertical-align: top;
+        }
+        .pokemon-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+        }
+        .pokemon-name {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon</h1>
+        <div id="pokemon-container" class="text-center">
+        </div>
+        <div id="loading" style="display:none; text-align:center; padding: 20px;">
+            Loading more Pokémon...
+        </div>
+        <div id="end-message" style="display:none; text-align:center; padding: 20px; color: #999;">
+            You caught 'em all! 🎉
+        </div>
+    </div>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
